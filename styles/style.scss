@@ -1,0 +1,19 @@
+html,
+body {
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+.content {
+    flex: 1 0 auto;
+}
+.footer {
+    flex-shrink: 0;
+}
+.container{
+    max-width: 1744px;
+    margin: auto; 
+    background-color: #785;
+}
