@@ -20,14 +20,20 @@
 
         <header id="header" class="header">
             <div class="header__wrapper">
-                <div class="container">
-                    <div class="header__middle">
-                        <div class="header__inner">
+
+                <div class="header__middle">
+                    <div class="header__inner">
+                        <div class="container">
                             <nav class="menu">
                                 <div class="menu__wrapper">
                                     <div class="menu__logo">
-                                        <a href="#header"><img src="img/header-logo.png" alt="logo"></a>
+                                        <a class="header__logo" href="#header"><img src="img/header-logo.png"
+                                                alt="logo"></a>
+                                        <div class="menu__number">
+                                            <a class="tel" href="tel:8847451236">884-745-1236</a>
+                                        </div>
                                     </div>
+
                                     <div class="menu__list">
                                         <ul class="menu__list__wrapper">
                                             <li><a class="central" href="#">Home</a></li>
@@ -38,8 +44,22 @@
                                             <li><a class="tel" href="tel:8847451236">884-745-1236</a></li>
                                         </ul>
                                     </div>
+                                    <div class="menu__list__burger">
+                                        <input id="menu__toggle" type="checkbox" />
+                                        <label class="menu__btn" for="menu__toggle">
+                                            <span></span>
+                                        </label>
+                                        <ul class="menu__box">
+                                            <li><a class="menu__item" href="#">About Us</a></li>
+                                            <li><a class="menu__item" href="#">What We Do</a></li>
+                                            <li><a class="menu__item" href="#">Our Blog</a></li>
+                                            <li><a class="menu__item" href="#">Testimonials</a></li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </nav>
+
+
                             <div class="header__text">
                                 <div class="big__text">
                                     Your Business <br>
@@ -50,11 +70,21 @@
                                     increase site traffic, conversions, and ROI
                                 </span>
                             </div>
+                            <div class="header__button">
+                                <div class="button__button">
+                                    <a href="#">Work With Us</a>
+                                </div>
+                                <div class="button__text">
+                                    <img src="img/header-btn.png" alt="play">
+                                    <span>Who We Are</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </header>
+    </div>
+    </header>
 
 
     </div>
@@ -64,6 +94,8 @@
 
     </footer>
 
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
