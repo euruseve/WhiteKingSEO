@@ -283,6 +283,46 @@ ul {
     }
 }
 //
+//counting
+.counting__wrapper{
+    background-image: url("/img/counting-bg.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.counting__line {
+    img {
+        width: 100%;
+        min-height: 7px;
+    }
+    margin-bottom: 69px;
+}
+.counting__container {
+    display: flex;
+    justify-content: space-between;
+    &__block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #003ecd;
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: bold;
+        p {
+            font-size: 46px;
+            margin-bottom: 0;
+            margin-top: 0;
+            padding-bottom: 12px;
+            padding-top: 28px;
+        }
+    }
+}
+.counting__border{
+    margin: 78px 75px 16px;
+    width: 2px;
+    background-color: #003ecd;
+}
+//
+
 //media
 @media (max-width: 1538px) {
     .menu {

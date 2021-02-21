@@ -371,6 +371,61 @@ ul li {
   line-height: 36px;
 }
 
+.counting__wrapper {
+  background-image: url("/img/counting-bg.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.counting__line {
+  margin-bottom: 69px;
+}
+
+.counting__line img {
+  width: 100%;
+  min-height: 7px;
+}
+
+.counting__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.counting__container__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #003ecd;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.counting__container__block p {
+  font-size: 46px;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-bottom: 12px;
+  padding-top: 28px;
+}
+
+.counting__border {
+  margin: 78px 75px 16px;
+  width: 2px;
+  background-color: #003ecd;
+}
+
 @media (max-width: 1538px) {
   .menu {
     padding: 53px 150px 217px 150px;
