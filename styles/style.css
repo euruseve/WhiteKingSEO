@@ -30,6 +30,11 @@ body {
   margin: auto;
 }
 
+.container__min {
+  max-width: 1136px;
+  margin: auto;
+}
+
 a {
   text-decoration: none;
   color: #000;
@@ -50,7 +55,7 @@ ul li {
   background-position: left top;
   background-size: auto;
   height: 100%;
-  padding-bottom: 298px;
+  padding-bottom: 276px;
 }
 
 .menu {
@@ -314,6 +319,18 @@ ul li {
           transition-duration: 0.25s;
 }
 
+.provide__text {
+  margin-top: 66px;
+  text-align: center;
+}
+
+.provide__text span {
+  color: #091e42;
+  font-weight: bold;
+  display: block;
+  font-size: 46px;
+}
+
 @media (max-width: 1538px) {
   .menu {
     padding: 53px 150px 217px 150px;
@@ -449,11 +466,17 @@ ul li {
 }
 
 @media (max-width: 440px) {
+  .header__inner {
+    padding-bottom: 283px;
+  }
   .header__text .big__text {
     font-size: 45px;
   }
   .header__text .small__text {
     font-size: 16px;
+  }
+  .provide__text span {
+    font-size: 38px;
   }
 }
 /*# sourceMappingURL=style.css.map */
