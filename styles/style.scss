@@ -327,7 +327,7 @@ ul {
 }
 
 .counting__inner__video {
-    padding-bottom: 70px;
+    padding-bottom: 50px;
     .video__text {
         margin-bottom: 66px;
         text-align: center;
@@ -360,7 +360,38 @@ ul {
     }
 }
 //
+//blue
+.blue__wrapper {
+    background: linear-gradient(90deg, rgb(0, 62, 205) 0%, rgb(0, 101, 255)  100%);
+}
+.blue__inner{
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 77px;
+}
+.blue__text {
+    padding-bottom: 43px;
+    color: #fff;
+    font-size: 46px;
+    font-weight: bold;
 
+}
+.blue__button{
+    padding: 20px 50px;
+    a{
+        padding: 20px 50px;
+        color: #fff;
+        font-weight: bold;
+        font-size: 26px;
+        border-radius: 35px;
+        background: linear-gradient(90deg, rgb(124,158,255) 0%, rgb(48,220,255) 100%);
+        transition: all .5s;
+        &:hover{
+            background: linear-gradient(-90deg, rgb(124,158,255) 0%, rgb(48,220,255) 100%);
+        }
+    }
+}
+//
 //media
 @media (max-width: 1538px) {
     .menu {
@@ -462,7 +493,28 @@ ul {
             width: 50%;
         }
     }
+    .conting__inner{
+        padding-bottom: 100px;
+    }
 }
+
+
+@media(max-width: 897px) {
+    .blue__text{
+        font-size: 32px;
+    }
+}
+
+@media(max-width: 708px) {
+    .blue__button{
+        padding: 10px 35px;
+        a{
+            padding: 10px 35px;
+            font-size: 20px;
+        }
+    }
+}
+
 
 @media (max-width: 680px) {
     .video__text {
@@ -505,6 +557,13 @@ ul {
     }
 }
 
+@media(max-width: 636px) {
+    .blue__text{
+        font-size: 24px;
+    }
+}
+
+
 @media (max-width: 538px) {
     .header__text {
         .big__text {
@@ -543,6 +602,18 @@ ul {
             }
         }
     }
+
+    .blue__button{
+        padding: 0;
+        a{
+            padding: 0;
+            border-radius: 0;
+            background: none;
+            color: rgb(48,220,255);
+            border-bottom: 1px solid rgb(124,158,255);
+            text-shadow:  rgb(124,158,255) 1px 0 10px; 
+        }
+    }
 }
 
 @media (max-width: 485px) {
@@ -554,6 +625,8 @@ ul {
                 &::before {
                     content: none !important;
                 }
+                text-decoration: underline;
+                //border-bottom: 1px solid rgb(197, 197, 197);
             }
         }
     }
@@ -582,10 +655,13 @@ ul {
             width: 100%;
         }
     }
+    .conting__inner{
+        padding-bottom: 0px;
+    }
 }
 @media (max-width: 423px) {
-    .video__text{
-        span{
+    .video__text {
+        span {
             font-size: 28px !important;
         }
     }
@@ -596,6 +672,5 @@ ul {
         }
     }
 }
-
 
 // Vladyslav Ostrovskyi
