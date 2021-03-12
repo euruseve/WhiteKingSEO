@@ -1,4 +1,5 @@
 $(function () {
+    //slider
     $('.sliderblock__box__wrapper').slick({
         slidesToShow: 3,
         slidesToScroll: 3,
@@ -34,4 +35,36 @@ $(function () {
             },
         ]
     });
+    //form
+    $("form").submit(function() { 
+		var th = $(this);
+		$.ajax({
+			type: "POST",
+			url: "mail.php", 
+			data: th.serialize()
+		}).done(function() {
+            alert("Massage was send");
+			setTimeout(function() {
+				th.trigger("reset");
+			}, 1000);
+		});
+		return false;
+	});
 });
+
+//map
+
+function initMap(){
+    var opt = {
+        center: {lat: 37.626331231999856,  lng: -121.0174503018566},
+        zoom: 17
+    }
+
+   var map = new google.maps.Map(document.getElementById("map"), opt)
+
+   var marker = new google.maps.Marker({
+       position: {lat: 37.626331231999856,  lng: -121.0174503018566},
+       map: map,
+       title: "701 Chicago Avenue, California"
+   })
+}

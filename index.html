@@ -496,7 +496,7 @@
 
         <section class="talknmap">
             <div class="talknmap__wrapper">
-                <div class="container__min">
+                <div class=" container2">
                     <div class="talknmap__inner">
                         <div class="talknmap__form">
                             <div class="talknmap__form__wrapper">
@@ -506,27 +506,47 @@
                                 <form action="">
                                     <!--  -->
                                     <input type="hidden" name="SEO" value="WhiteKing">
-                                    <input type="hidden" name="admin_email" value="ostrovskyi@outlook.com">
+                                    <input type="hidden" name="admin_email" value="anymail@sample.com">
                                     <input type="hidden" name="form_subject" value="Form Subject">
                                     <!--  -->
-                                    <input type="text" name="Name" placeholder="Name" required>
-                                    <input type="email" name="E-mail" placeholder="E-mail" required><br>
+
+                                    <input class="small__input small__input1" type="text" name="Name" placeholder="Name"
+                                        required>
+                                    <input class="small__input" type="email" name="E-mail" placeholder="E-mail"
+                                        required><br>
                                     <input type="text" name="Subject" placeholder="Subject" required><br>
                                     <input type="text" name="Help" placeholder="How can we help?" required><br>
                                     <button>Send Your Query</button>
 
-
                                 </form>
                                 <div class="talknmap__links">
-
+                                    <div class="talknmap__links__box">
+                                        <img src="/img/talknmap-geo.png" alt="">
+                                        <div class="box__text">
+                                            <span>Address</span> <br>
+                                            701 Chicago Avenue, California
+                                        </div>
+                                    </div>
+                                    <div class="talknmap__links__box">
+                                        <img src="/img/talknmap-tel.png" alt="">
+                                        <div class="box__text">
+                                            <span>Phone</span> <br>
+                                            <a href="tel:2099998566">209-999-8566</a>
+                                        </div>
+                                    </div>
+                                    <div class="talknmap__links__box">
+                                        <img src="/img/talknmap-mail.png" alt="">
+                                        <div class="box__text">
+                                            <span>Email</span> <br>
+                                            <a href="mail:info@seowhiteking.com">info@seowhiteking.com</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="talknmap__map">
-
-                        </div>
                     </div>
-                </div>
+                    <div id="map"></div>
+                </div> 
             </div>
         </section>
 
@@ -540,6 +560,10 @@
     </footer>
 
 
+
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvGXgU64XXojxcHdWBm25NjIOei8V9SIQ&callback=initMap&libraries=&v=weekly"
+        async></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>
