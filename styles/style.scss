@@ -628,8 +628,18 @@ ul {
 }
 ////
 //
-//
-
+//talknmap
+.talknmap__form{
+   padding-top: 108px;
+   padding-left: 13px;
+   &__wrapper{
+       .talknmap__text{
+           color: #091e42;
+           font-size: 46px;
+           font-weight: bold;
+       }
+   }
+}
 
 //
 //media

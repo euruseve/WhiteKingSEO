@@ -804,6 +804,17 @@ ul li {
   margin-bottom: 0;
 }
 
+.talknmap__form {
+  padding-top: 108px;
+  padding-left: 13px;
+}
+
+.talknmap__form__wrapper .talknmap__text {
+  color: #091e42;
+  font-size: 46px;
+  font-weight: bold;
+}
+
 @media (max-width: 1538px) {
   .menu {
     padding: 53px 150px 217px 150px;
