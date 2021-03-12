@@ -500,12 +500,12 @@ ul {
     display: flex;
     justify-content: space-between;
     padding-bottom: 90px;
-    .big__text{
+    .big__text {
         margin-top: 50px;
         color: #091e42;
         font-size: 44px;
     }
-    .small__text{
+    .small__text {
         max-width: 347px;
         margin-top: 58px;
         color: #3c3c3c;
@@ -513,13 +513,13 @@ ul {
         line-height: 36px;
         font-weight: lighter;
     }
-    .video{
+    .video {
         margin-top: 74px;
         color: #003ecd;
         font-size: 18px;
         display: flex;
         align-items: center;
-        span{
+        span {
             margin-right: 6px;
         }
     }
@@ -532,7 +532,106 @@ ul {
         box-shadow: 0px 0px 35px 0px rgba(157, 157, 157, 0.73);
     }
 }
+//
+//sliderblock
+.sliderblock__wrapper {
+    background-image: url("/img/sliderblock-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 90px;
 
+}
+.sliderblock__text {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    span {
+        margin-top: 75px;
+        color: #fff;
+        font-weight: bold;
+        font-size: 46px;
+    }
+    img {
+        margin-top: 21px;
+    }
+}
+.sliderblock__box {
+    margin-top: 74px;
+    &__wrapper {
+        text-align: center;
+        margin-right: -10.5px;
+        margin-left: -10.5px;
+    }
+    &__inner {
+        border-radius: 15px;
+        background-color: #fff;
+        max-width: 358px;
+        text-align: center !important;
+        padding-bottom: 50px;
+        img {
+            margin: auto;
+            margin-top: 50px;
+        }
+        .box__text {
+            margin: auto;
+            margin-top: 40px;
+            color: #3c3c3c;
+            font-size: 16px;
+            font-weight: lighter;
+            max-width: 258px;
+        }
+        .box__bottom {
+            margin-top: 40px;
+            text-align: left;
+            display: flex;
+            justify-content: center;
+            font-weight: lighter;
+            span {
+                font-weight: bold;
+            }
+            img {
+                margin: 0 10px 0 0;
+            }
+        }
+    }
+}
+////
+
+.slick-dots {
+    position: unset;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.slick-dots li {
+    width: 0;
+    height: 0;
+    margin: 0 10px;
+}
+.slick-dots li button {
+    width: 10px;
+    height: 10px;
+    background-color: #c6d3da;
+    border-radius: 50% !important;
+}
+.slick-dots li button::before {
+    display: none;
+}
+.slick-dots li.slick-active button {
+    background-color: #00acfd;
+    box-shadow: 0px 0px 3px 3px rgba(0, 172, 253, 0.302);
+}
+.slick-dotted.slick-slider {
+    margin-bottom: 0;
+}
+////
+//
+//
+
+
+//
 //media
 @media (max-width: 1538px) {
     .menu {
@@ -601,7 +700,6 @@ ul {
     .header__text {
         margin-left: 0;
         text-align: center;
-
     }
     .big__text {
         padding-bottom: 50px;
@@ -643,41 +741,47 @@ ul {
         min-width: 700px;
     }
     .clientlove__text,
-    .certified__text{
-        .big__text{
+    .certified__text {
+        .big__text {
             padding-bottom: 0;
         }
     }
-    .certified__text{
-        .small__text{
+    .certified__text {
+        .small__text {
             margin-bottom: 30px;
         }
     }
 }
 
-@media (max-width: 1180px){
-    .clientlove__inner{
+@media (max-width: 1180px) {
+    .clientlove__inner {
         padding-left: 20px;
         padding-right: 20px;
     }
+    .sliderblock__box {
+        &__wrapper {
+            margin-right: 0;
+            margin-left: 0;
+        }
+    }
 }
 
-@media (max-width: 1060px){
-    .certified__inner{
+@media (max-width: 1060px) {
+    .certified__inner {
         margin-bottom: 0px;
     }
-    .clientlove__inner{
+    .clientlove__inner {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        .small__text{
+        .small__text {
             margin-top: 30px;
         }
-        .video{
+        .video {
             margin-top: 30px;
             display: block;
-            
-            img{
+
+            img {
                 display: block;
                 margin: 10px auto;
             }
@@ -715,8 +819,8 @@ ul {
             font-size: 20px;
         }
     }
-    .clientslove__video{
-        iframe{
+    .clientslove__video {
+        iframe {
             width: 500px;
             height: 300px;
         }
@@ -829,13 +933,18 @@ ul {
     }
 }
 
-@media (max-width: 526px){
-    .clientslove__video{
-        iframe{
+@media (max-width: 526px) {
+    .clientslove__video {
+        iframe {
             width: 400px;
             height: 225px;
         }
-    }   
+    }
+    .sliderblock__text{
+        span{
+            font-size: 32px;
+        }
+    }
 }
 
 @media (max-width: 485px) {
@@ -906,9 +1015,14 @@ ul {
         iframe {
             width: 300px;
             height: 150px;
-           
         }
     }
 }
+@media (max-width: 383px){
+    .sliderblock__box__inner {
+        max-width: 306px;
+    }
+}
+
 
 // Vladyslav Ostrovskyi
