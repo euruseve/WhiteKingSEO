@@ -995,6 +995,112 @@ ul li {
   background: linear-gradient(-90deg, #0bdbdf 0%, #60f285 100%);
 }
 
+.footer__wrapper__links {
+  background-color: #26303c;
+  border-bottom: 1px solid #3a434e;
+}
+
+.footer__wrapper__links ul {
+  padding: 0;
+  margin: 0;
+  padding-top: 92px;
+  padding-bottom: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__wrapper__links ul li.main__li {
+  color: white;
+  font-weight: lighter;
+}
+
+.footer__wrapper__links ul li.main__li a {
+  color: white;
+}
+
+.footer__wrapper__links ul li.main__li .footer__links {
+  margin-top: 30px;
+}
+
+.footer__wrapper__links ul li.main__li .footer__links img {
+  padding-right: 13px;
+}
+
+.footer__wrapper__links ul li.main__li .address {
+  margin-top: 58px;
+}
+
+.footer__wrapper__links ul li.main__li .footer__icon {
+  margin-top: 35px;
+}
+
+.footer__wrapper__links ul li.main__li .footer__icon img {
+  margin-right: 7px;
+}
+
+.footer__wrapper__links ul li.links__li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer__wrapper__links ul li.links__li span {
+  color: white;
+  font-weight: bold;
+}
+
+.footer__wrapper__links ul li.links__li a {
+  color: #9ea7b8;
+  font-weight: lighter;
+  margin-top: 26px;
+}
+
+.footer__wrapper__copyright {
+  background-color: #26303c;
+}
+
+.footer__inner__copyright {
+  padding-top: 36px;
+  padding-bottom: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__inner__copyright .copy__box {
+  color: white;
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.footer__inner__copyright .copy__box span {
+  color: #01d4ed;
+}
+
+.footer__inner__copyright .links__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__inner__copyright .links__box a {
+  color: #667281;
+  font-size: 14px;
+  font-weight: lighter;
+  margin-left: 20px;
+}
+
 @media (max-width: 1538px) {
   .menu {
     padding: 53px 150px 217px 150px;
@@ -1138,6 +1244,11 @@ ul li {
     margin-right: 0;
     margin-left: 0;
   }
+  .footer__wrapper__links,
+  .footer__wrapper__copyright {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 @media (max-width: 1117px) {
@@ -1220,6 +1331,56 @@ ul li {
   .smallform__form form button {
     max-width: 200px;
     width: 100%;
+  }
+  .footer__wrapper__links ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 30px;
+  }
+  .footer__wrapper__links ul li {
+    margin-bottom: 50px;
+  }
+  .footer__wrapper__links ul li.main__li {
+    text-align: center;
+  }
+  .footer__wrapper__links ul li.links__li {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer__inner__copyright {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer__inner__copyright .links__box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer__inner__copyright .links__box a {
+    margin-left: unset;
+    font-size: 16px;
+    margin-bottom: 7px;
   }
 }
 
